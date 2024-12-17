@@ -25,5 +25,6 @@ public class Main {
         };
 
         System.out.println(service.allProductInStock(list1, Type.TV));
+        System.out.println(service.allProductInStock(list1, Type.AUDIO));
     }
 }

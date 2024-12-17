@@ -10,6 +10,23 @@ public class Product {
 
     private boolean availability;
 
+    public Product(String name, Type type, int cost)
+    {
+        this.name = name;
+        this.cost = cost;
+        this.type = type;
+    }
+
+    public Product(String name, Type type, int cost, boolean availability)
+    {
+        this.name = name;
+        this.cost = cost;
+        this.type = type;
+        this.availability = availability;
+    }
+
+    public Product(){}
+
     public void setName(String name) {
         this.name = name;
     }
@@ -33,22 +50,4 @@ public class Product {
     public boolean isAvailability() {
         return availability;
     }
-
-    public Product(String name, Type type, int cost)
-    {
-        this.name = name;
-        this.cost = cost;
-        this.type = type;
-    }
-
-    public Product(String name, Type type, int cost, boolean availability)
-    {
-        this.name = name;
-        this.cost = cost;
-        this.type = type;
-        this.availability = availability;
-    }
-
-    public Product(){}
-
 }

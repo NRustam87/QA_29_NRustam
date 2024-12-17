@@ -5,8 +5,7 @@ public class ProductService {
     public int costAllProduct(Product[] products, Type type){
         int value = 0;
         for(Product product : products){
-            if(product.type == type)
-            {
+            if(product.type == type){
                 value = value + product.getCost();
             }
         }
@@ -17,8 +16,7 @@ public class ProductService {
     public int allProductInStock(Product[] products, Type type){
         int count = 0;
         for(Product product : products){
-            if(product.isAvailability())
-            {
+            if(product.isAvailability() && product.type == type) {
                 count++;
             }
         }
